@@ -31,7 +31,7 @@ body
     margin: 1rem;
     border: 0;
     background-image: linear-gradient(to right top, #364bbb, #0086ef, #00b3d6, #00d685, #a8eb12);
-    color: #fff;
+    color:red;
     border-radius: 10px;
     transition: transform 0.4s ease;
     transform: translateX(400%);
