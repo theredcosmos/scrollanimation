@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    align-items: center;
+    display: flex;
+    font-family: 'Merriweather',serif;
+    justify-content: center; 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* these are the global styles for each projects so I am not going to touch them */
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.element{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border: 0;
+    background-image: linear-gradient(to right top, #364bbb, #0086ef, #00b3d6, #00d685, #a8eb12);
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    transform: translateX(400%);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.element:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.element.show{
+    transform: translateX(0);
+}
+
+.element:hover{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+}
